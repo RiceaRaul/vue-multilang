@@ -1,9 +1,8 @@
 import { App } from 'vue';
 import { IMultiLangOptions, LocaleMessage } from "./types/types";
-declare class MultiLang {
-    options: IMultiLangOptions;
-    constructor(options?: IMultiLangOptions);
-    test(): string | undefined;
+export declare class MultiLang {
+    private options;
+    constructor(options: IMultiLangOptions);
     changeLocale(newLocale: string): boolean;
     translate(messageName: string): LocaleMessage;
 }
@@ -16,4 +15,3 @@ declare module '@vue/runtime-core' {
         $t(messageName: string): LocaleMessage;
     }
 }
-export {};

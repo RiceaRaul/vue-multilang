@@ -5,8 +5,7 @@ export interface LocaleMessageObject { [key: string]: LocaleMessage; }
 export interface IMessageInterface { [key: string]: LocaleMessageObject; }
 
 export interface IMultiLangOptions {
-    text?: string ,
-    locale?:string,
+    locale:string,
     fallbackLocale?:string
-    messages?:IMessageInterface
+    messages:IMessageInterface
 }
