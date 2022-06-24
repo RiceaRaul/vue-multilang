@@ -2,8 +2,8 @@
   "name": "vue-multilang",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/bundle.js",
-  "module": "dist/bundle.js",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist",
