@@ -4,9 +4,9 @@
   "description": "",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
-  "types": "dist/index.d.ts",
+  "types": "lib/esm/index.d.ts",
   "files": [
-    "dist",
+    "lib",
     "src"
   ],
   "scripts": {
