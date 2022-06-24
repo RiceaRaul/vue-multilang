@@ -1,6 +1,8 @@
 {
   "message": {
     "hello": "Hello",
+    "custom": "{0}",
+    "customObject": "{username}",
     "empty": ""
   }
 }

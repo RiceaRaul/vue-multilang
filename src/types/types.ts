@@ -1,4 +1,4 @@
-export type LocaleMessage = string | LocaleMessageObject
+export type LocaleMessage = string
 
 export interface LocaleMessageObject { [key: string]: LocaleMessage; }
 
@@ -9,3 +9,5 @@ export interface IMultiLangOptions {
     fallbackLocale?:string
     messages:IMessageInterface
 }
+
+

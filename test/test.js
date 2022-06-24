@@ -1,6 +1,6 @@
 'use strict';
 const assert = require('assert')
-const createMultilang = require("../lib/index.cjs").MultiLang;
+const createMultilang = require("../lib/cjs").MultiLang;
 const en = require("./lang/en.json");
 const ro = require("./lang/ro.json");
 describe('basic', () => {
@@ -50,6 +50,16 @@ describe('basic', () => {
                 multilang.options.locale = "undefined"
                 multilang.options.fallbackLocale = "undefined"
                 assert.deepEqual(multilang.translate('message.hello'),"message.hello");
+            })
+        })
+        describe('custom string parameter object', () => {
+            it('should change variable to string', () => {
+                assert.deepEqual(multilang.translate('message.customObject',{username:"salut"}),"salut");
+            })
+        })
+        describe('custom string parameter array', () => {
+            it('should change variable to string', () => {
+                assert.deepEqual(multilang.translate('message.custom',["salut"]),"salut");
             })
         })
     })
