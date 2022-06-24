@@ -1,6 +1,6 @@
 {
-  "name": "vue-multilang",
-  "version": "1.0.0",
+  "name": "vue3-multilang",
+  "version": "0.0.1",
   "description": "",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
@@ -21,7 +21,7 @@
     "url": "git+https://github.com/RiceaRaul/vue-multilang.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ricea",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/RiceaRaul/vue-multilang/issues"

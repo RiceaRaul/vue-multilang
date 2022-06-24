@@ -55,8 +55,8 @@ export default function createMultilang() {
         install: (app: App, options: IMultiLangOptions) => {
             let multilang = new MultiLang(options);
             app.config.globalProperties.$test = multilang
-            app.config.globalProperties.$t = (message: string,options:Array<string|number>|object) => {
-                return multilang.translate(message,options)
+            app.config.globalProperties.$t = (message: string,opt:Array<string|number>|object) => {
+                return multilang.translate(message,opt)
             }
         },
     }
