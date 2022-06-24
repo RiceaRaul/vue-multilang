@@ -11,7 +11,7 @@ export default function createMultilang(): {
 };
 declare module '@vue/runtime-core' {
     interface ComponentCustomProperties {
-        $test: MultiLang;
+        $lang: MultiLang;
         $t(messageName: string, options: Array<string | number> | object): LocaleMessage;
     }
 }

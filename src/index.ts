@@ -54,7 +54,7 @@ export default function createMultilang() {
     return {
         install: (app: App, options: IMultiLangOptions) => {
             let multilang = new MultiLang(options);
-            app.config.globalProperties.$test = multilang
+            app.config.globalProperties.$lang = multilang
             app.config.globalProperties.$t = (message: string,opt:Array<string|number>|object) => {
                 return multilang.translate(message,opt)
             }
@@ -64,7 +64,7 @@ export default function createMultilang() {
 /* istanbul ignore next */
 declare module '@vue/runtime-core' {
     export interface ComponentCustomProperties {
-        $test: MultiLang,
+        $lang: MultiLang,
         $t(messageName: string,options:Array<string|number>|object): LocaleMessage
     }
 }
