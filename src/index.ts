@@ -32,9 +32,9 @@ export class MultiLang {
         }
         return true;
     }
-    translate(messageName: string,options:Array<string|number>|object): LocaleMessage {
-
-        let locale = this.options.locale?.toString() ;
+    translate(messageName: string,options:Array<string|number>|object): LocaleMessage
+    {
+        let locale = this.options.locale;
         const messages = this.options.messages;
         if (!messages.hasOwnProperty(locale)) {
             if (this.options.fallbackLocale === "") {
