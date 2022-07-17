@@ -3,6 +3,7 @@
     "hello": "Hello",
     "custom": "{0}",
     "customObject": "{username}",
-    "empty": ""
+    "empty": "",
+    "variable": "@message.hello@ @message.customObject@"
   }
 }
