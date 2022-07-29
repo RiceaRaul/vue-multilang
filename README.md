@@ -5,7 +5,7 @@
 
 ##  Documentation
 
-About Vue3 Multilang v8.x, See [here](https://raul202.gitbook.io/vue3-multilang/)
+About Vue3 Multilang v0.0.4, See [here](https://raul202.gitbook.io/vue3-multilang/)
 
 
 ## License
